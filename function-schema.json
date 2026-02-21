@@ -1,0 +1,68 @@
+{
+  "functions": [
+    {
+      "name": "check_leave_balance",
+      "description": "Look up how many PTO and sick days an employee has remaining this year.",
+      "parameters": {
+        "employee_id": {
+          "type": "string",
+          "description": "Employee ID, e.g. EMP001",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "submit_leave_request",
+      "description": "Submit a new leave request for an employee. Returns a confirmation or denial based on available balance.",
+      "parameters": {
+        "employee_id": {
+          "type": "string",
+          "description": "Employee ID, e.g. EMP001",
+          "required": true
+        },
+        "start_date": {
+          "type": "string",
+          "description": "Start date in YYYY-MM-DD format",
+          "required": true
+        },
+        "end_date": {
+          "type": "string",
+          "description": "End date in YYYY-MM-DD format",
+          "required": true
+        },
+        "leave_type": {
+          "type": "string",
+          "description": "Type of leave: pto, sick, bereavement, or parental",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "get_company_policy",
+      "description": "Retrieve the company policy text for a given topic such as pto, sick_leave, remote_work, bereavement, or parental.",
+      "parameters": {
+        "topic": {
+          "type": "string",
+          "description": "Policy topic to look up, e.g. pto, sick_leave, remote_work",
+          "required": true
+        }
+      }
+    },
+    {
+      "name": "get_team_calendar",
+      "description": "Check who on a given team is scheduled to be out of office during a specific month.",
+      "parameters": {
+        "team_name": {
+          "type": "string",
+          "description": "Team name: engineering, marketing, or sales",
+          "required": true
+        },
+        "month": {
+          "type": "string",
+          "description": "Month to check, e.g. March, 2026-03, or march 2026",
+          "required": true
+        }
+      }
+    }
+  ]
+}
