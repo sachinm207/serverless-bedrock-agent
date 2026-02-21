@@ -2,7 +2,7 @@
 
 An HR assistant agent built on Amazon Bedrock Agents and AWS Lambda. The agent handles leave balance lookups, time-off requests, company policy questions, and team calendar checks — all through natural language.
 
-Companion code for the blog post: [How to Build a Serverless AI Agent with Amazon Bedrock and Lambda](#)
+Companion code for the blog post: [How to Build a Serverless AI Agent with Amazon Bedrock and Lambda](https://dev.to/sachinm207/how-to-build-a-serverless-ai-agent-with-amazon-bedrock-and-lambda-6l1)
 
 ## Project Structure
 
